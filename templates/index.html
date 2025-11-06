@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+     <h1 class="text-3xl font-bold underline">
+      Hello Sayang
+    </h1>
+    <a class="btn btn-soft btn-accent" href="/add-new-mahasiswa">Add New Mahasiswa</a>
+    <ul>
+        {% for mahasiswa in list_mahasiswa %}
+            <li>Mahasiswa : {{mahasiswa.npm}} | {{mahasiswa.name}}</li>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}

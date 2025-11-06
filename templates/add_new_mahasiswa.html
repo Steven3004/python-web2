@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-3xl font-bold underline">
+      Add New Mahasiswa
+    </h1>
+    <form action="/add-new-mahasiswa" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Nama">
+        </div>
+        <div>
+            <label for="npm">NPM</label>
+            <input id="npm" type="text" name="npm" placeholder="NPM">
+        </div>
+        <button type="submit">Simpan</button>
+    </form>
+{% endblock %}
