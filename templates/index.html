@@ -8,7 +8,10 @@
     <a class="btn btn-soft btn-accent" href="/add-new-mahasiswa">Add New Mahasiswa</a>
     <ul>
         {% for mahasiswa in list_mahasiswa %}
-            <li>Mahasiswa : {{mahasiswa.npm}} | {{mahasiswa.name}}</li>
+            <li>
+                Mahasiswa : <img src="/uploads/media/{{mahasiswa.profile_picture}}" />
+                {{mahasiswa.npm}} | {{mahasiswa.name}}
+            </li>
         {% endfor %}
     </ul>
     
